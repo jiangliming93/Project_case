@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.videoList {
+    width: 3.75rem;
+}
+
+.videoItem .videoTop {
+    position: relative;
+    width: 100vw;
+    height: 75vw;
+}
+
+.videoItem {
+    /* width: 10vh; */
+    width: 100vw;
+}
+
+.videoItem .videoTop .img {
+    width: 100vw;
+    height: 75vw;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+}
+
+.videoItem .videoTop button {
+    position: absolute;
+    width: 100vw;
+    height: 75vw;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../video/img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 20%;
+}
+
+.videoItem .videoTop h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    font-size: 0.5rem;
+    color: #fff;
+    padding: 0.3rem;
+}
+
+.videoItem .videoTop p .eye {
+    /* 既可以同行又可以设置宽高 */
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-image: url(../video/img/eye.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.videoItem .videoTop p {
+    position: absolute;
+    /* left: 0.3rem; */
+    bottom: 0.1rem;
+    left: 0;
+    /* bottom: 0; */
+    width: 100vw;
+    text-align: right;
+    font-size: 0.3rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.2rem;
+}
+
+.videoItem .videoBottom {
+    display: flex;
+    width: 100vw;
+    height: 1rem;
+    align-items: center;
+}
+
+.videoItem .videoBottom img {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 0.35rem;
+}
+
+.videoItem .videoBottom .right {
+    display: flex;
+    height: 1rem;
+    flex: 1;
+    padding: 0 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.videoItem .videoBottom .right .author {
+    font-size: 0.2rem;
+}
+
+.videoItem .videoBottom .right .comment {
+    font-size: 0.2rem;
+    color: #999;
+}
+
+.download {
+    width: 100vw;
+    height: 1rem;
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 1rem;
+    background: #efefef;
+    color: #999;
+}
+
+.playPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.playPage video {
+    width: 100vw;
+}
+
+.close {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    background-image: url(../video/img/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

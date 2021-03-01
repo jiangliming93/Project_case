@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 790px;
+    height: 340px;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+.wrap li {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+.wrap li:first-child {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    /* 内容水平居中 */
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    /* 400正常；700加粗 */
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+/* .arrow {
+    先将两个小箭头隐藏
+    display: none;
+} */
+
+.arrow-left {
+    /* left: 0; */
+    position: absolute;
+    left: 0;
+}
+
+.arrow-right {
+    /* right: 0; */
+    position: absolute;
+    right: 0;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
